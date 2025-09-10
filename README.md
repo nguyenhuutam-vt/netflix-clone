@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Netflix Clone
+
+## Introduction
+
+This is a Netflix Clone built with Next.js and Tailwind CSS. The application allows users to browse popular, top-rated, and upcoming movies. It demonstrates modern React and Next.js features, including server-side rendering, dynamic routing, and responsive design.
+
+## Features
+
+- Browse popular, top-rated, and upcoming movies.
+- Search for movies by name.
+- Responsive UI for desktop and mobile.
+- Clean and modern design using Tailwind CSS.
+- Modular component structure.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or higher recommended)
+- npm (comes with Node.js)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/nguyenhuutam-vt/netflix-clone.git
+   ```
 
-## Learn More
+2. **Install dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Open your browser and visit:**
+   ```
+   http://localhost:3000
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/components/header.tsx`: Navigation bar and search.
+- `app/page.tsx`: Main page.
+- `app/toprated/page.tsx`, `app/upcoming/page.tsx`, `app/search/page.tsx`: Movie category pages.
+- `public/`: Static assets.
+- `globals.css`, `tailwind.config.ts`: Styling and Tailwind configuration.
+
+## Documentation
+
+- All main components are documented with comments in English.
+- The project is structured for clarity and maintainability.
+- You can easily add new features or pages by following the existing folder and component structure.
+
+## Notes
+
+- Fonts are loaded locally; make sure the `fonts` folder contains required font files or update font usage in `app/layout.tsx`.
+- The application is for educational purposes and does not include all Netflix features.
